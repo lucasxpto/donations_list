@@ -19,7 +19,7 @@ Future<void> main() async {
       "/home": (_) => HomeScreen(),
       "/register": (_) => RegisterScreen(),
       "/login": (_) => LoginScreen(),
-      "/bem-vindo": (_) => ItemRegistrationPage(),
+      "/bemvindo": (_) => ItemRegistrationPage(),
     },
   ));
 }

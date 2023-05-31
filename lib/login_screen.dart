@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
     var credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: _controladorEmail.text, password: _controladorSenha.text);
     Navigator.of(context)
-        .pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
+        .pushNamedAndRemoveUntil('/bemvindo', (Route<dynamic> route) => false);
   }
 
   Future<void> logarGoogle() async {
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
     // customMaterialBanner(context, 'Logado com sucesso!', Colors.green);
     if (user != null) {
       Navigator.of(context)
-          .pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
+          .pushNamedAndRemoveUntil('/bemvindo', (Route<dynamic> route) => false);
     }
 
   }
